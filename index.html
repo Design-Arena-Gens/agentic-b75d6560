@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image de Lion</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .lion-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .lion-image:hover {
+            transform: scale(1.05);
+        }
+
+        .description {
+            margin-top: 30px;
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .emoji {
+            font-size: 3em;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🦁 Le Roi de la Jungle 🦁</h1>
+
+        <svg class="lion-image" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+            <!-- Lion illustration -->
+            <!-- Mane (background) -->
+            <circle cx="200" cy="180" r="120" fill="#CD853F" opacity="0.8"/>
+            <circle cx="150" cy="140" r="50" fill="#D2691E" opacity="0.7"/>
+            <circle cx="250" cy="140" r="50" fill="#D2691E" opacity="0.7"/>
+            <circle cx="140" cy="200" r="45" fill="#CD853F" opacity="0.8"/>
+            <circle cx="260" cy="200" r="45" fill="#CD853F" opacity="0.8"/>
+            <circle cx="160" cy="240" r="40" fill="#D2691E" opacity="0.7"/>
+            <circle cx="240" cy="240" r="40" fill="#D2691E" opacity="0.7"/>
+
+            <!-- Main mane circles -->
+            <circle cx="180" cy="120" r="35" fill="#8B4513" opacity="0.6"/>
+            <circle cx="220" cy="120" r="35" fill="#8B4513" opacity="0.6"/>
+            <circle cx="130" cy="170" r="38" fill="#A0522D" opacity="0.7"/>
+            <circle cx="270" cy="170" r="38" fill="#A0522D" opacity="0.7"/>
+
+            <!-- Face -->
+            <circle cx="200" cy="200" r="80" fill="#DEB887"/>
+
+            <!-- Ears -->
+            <ellipse cx="150" cy="150" rx="25" ry="30" fill="#D2B48C"/>
+            <ellipse cx="150" cy="155" rx="15" ry="18" fill="#F5DEB3"/>
+            <ellipse cx="250" cy="150" rx="25" ry="30" fill="#D2B48C"/>
+            <ellipse cx="250" cy="155" rx="15" ry="18" fill="#F5DEB3"/>
+
+            <!-- Eyes -->
+            <ellipse cx="175" cy="190" rx="15" ry="20" fill="white"/>
+            <ellipse cx="225" cy="190" rx="15" ry="20" fill="white"/>
+            <circle cx="175" cy="195" r="10" fill="#2C1810"/>
+            <circle cx="225" cy="195" r="10" fill="#2C1810"/>
+            <circle cx="178" cy="192" r="4" fill="white"/>
+            <circle cx="228" cy="192" r="4" fill="white"/>
+
+            <!-- Snout -->
+            <ellipse cx="200" cy="220" rx="35" ry="30" fill="#F5DEB3"/>
+
+            <!-- Nose -->
+            <ellipse cx="200" cy="215" rx="12" ry="10" fill="#8B4513"/>
+
+            <!-- Mouth -->
+            <path d="M 200 215 Q 200 230 185 235" stroke="#2C1810" stroke-width="2" fill="none"/>
+            <path d="M 200 215 Q 200 230 215 235" stroke="#2C1810" stroke-width="2" fill="none"/>
+
+            <!-- Whiskers -->
+            <line x1="140" y1="210" x2="100" y2="205" stroke="#2C1810" stroke-width="2"/>
+            <line x1="140" y1="220" x2="100" y2="220" stroke="#2C1810" stroke-width="2"/>
+            <line x1="140" y1="230" x2="100" y2="235" stroke="#2C1810" stroke-width="2"/>
+
+            <line x1="260" y1="210" x2="300" y2="205" stroke="#2C1810" stroke-width="2"/>
+            <line x1="260" y1="220" x2="300" y2="220" stroke="#2C1810" stroke-width="2"/>
+            <line x1="260" y1="230" x2="300" y2="235" stroke="#2C1810" stroke-width="2"/>
+
+            <!-- Body hint -->
+            <ellipse cx="200" cy="320" rx="60" ry="50" fill="#DEB887"/>
+
+            <!-- Paws -->
+            <ellipse cx="170" cy="360" rx="20" ry="25" fill="#D2B48C"/>
+            <ellipse cx="230" cy="360" rx="20" ry="25" fill="#D2B48C"/>
+        </svg>
+
+        <div class="description">
+            <p>
+                Le lion est souvent appelé le "roi de la jungle". C'est un animal majestueux
+                et puissant qui vit principalement dans les savanes africaines. Les lions vivent
+                en groupes appelés "troupes" et sont connus pour leur rugissement impressionnant
+                qui peut être entendu à plusieurs kilomètres de distance.
+            </p>
+        </div>
+
+        <div class="emoji">👑</div>
+    </div>
+</body>
+</html>
